@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background color */
+    margin: 0;
+}
+
+.survey-screen {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background for survey screens */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+#rating-container, #text-container {
+    margin-top: 10px;
+}
+
+#navigation {
+    margin-top: 20px;
+}
+
+#progress {
+    margin-top: 10px;
+}
+
+#thank-you-screen {
+    background-color: #4caf50; /* Green background color for thank you screen */
+    color: #ffffff; /* White text color */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}

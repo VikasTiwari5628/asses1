@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Survey</title>
+</head>
+<body>
+    <div id="welcome-screen" class="survey-screen">
+        <h1>Welcome to our Shop</h1>
+        <button onclick="startSurvey()">Start Survey</button>
+    </div>
+
+    <div id="survey-screen" class="survey-screen" style="display: none;">
+        <h2 id="question-text"></h2>
+        <div id="rating-container" style="display: none;">
+            <label for="rating">Rate: </label>
+            <input type="number" id="rating" min="1" max="10">
+        </div>
+        <div id="text-container" style="display: none;">
+            <label for="textAnswer">Your answer: </label>
+            <textarea id="textAnswer"></textarea>
+        </div>
+        <div id="navigation">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="skipQuestion()">Skip</button>
+            <button onclick="submitSurvey()">Submit</button>
+        </div>
+        <p id="progress"></p>
+    </div>
+
+    <div id="thank-you-screen" class="survey-screen" style="display: none;">
+        <h1>Thank you for your time!</h1>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
